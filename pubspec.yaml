@@ -43,6 +43,11 @@ flutter:
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
+  fonts:
+    - family: Nunito
+      fonts:
+        - asset: lib/assets/font/nunito/Nunito-Regular.ttf
+        - asset: lib/assets/font/nunito/Nunito-Bold.ttf
   assets:
     - lib/assets/images/login/bg_wave1_biru.svg
     - lib/assets/images/login/img_logo.svg
