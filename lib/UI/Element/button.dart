@@ -1,6 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:presensi_ic_staff/UI/Element/imgVector.dart';
+import 'package:presensi_ic_staff/UI/Element/pack.dart';
+import 'package:presensi_ic_staff/UI/Element/textView.dart';
 
 Widget btnLogin = Container(
   child: Container(
@@ -16,5 +19,53 @@ Widget btnLogin = Container(
               borderRadius: BorderRadius.circular(10.0),
             ))),
         onPressed: () => null),
+  ),
+);
+
+Widget btnScan = Container(
+  child: Center(
+    child: Column(
+      children: <Widget>[
+        Stack(
+          children: <Widget>[
+            Positioned.fill(child: imgKotakTgl),
+            Container(margin: const EdgeInsets.all(0), child: imgScan2)
+          ],
+        ),
+        Container(margin: const EdgeInsets.only(top: 10), child: txtPresensiBtn)
+      ],
+    ),
+  ),
+);
+
+Widget btnRiwayat = Container(
+  child: Center(
+    child: Column(
+      children: <Widget>[
+        Stack(
+          children: <Widget>[
+            Positioned.fill(child: imgKotakTgl),
+            Container(margin: const EdgeInsets.all(0), child: imgRiwayat)
+          ],
+        ),
+        Container(margin: const EdgeInsets.only(top: 10), child: txtRiwayatBtn)
+      ],
+    ),
+  ),
+);
+
+Widget btnAkun = Container(
+  child: Center(
+    child: Column(
+      children: <Widget>[
+        Stack(
+          children: <Widget>[
+            Positioned.fill(child: imgKotakTgl),
+            Container(margin: const EdgeInsets.all(0), child: imgAkun)
+          ],
+        ),
+        Container(margin: const EdgeInsets.only(top: 10), child: txtAkunBtn)
+      ],
+    ),
   ),
 );

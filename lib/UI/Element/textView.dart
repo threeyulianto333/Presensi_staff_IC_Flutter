@@ -14,6 +14,30 @@ Widget txtPresensi = Container(
   ),
 );
 
+Widget txtPresensiBtn = Container(
+  child: Text(
+    "Presensi",
+    style:
+        TextStyle(fontFamily: 'Nunito', fontSize: 20, color: Colors.blueAccent),
+  ),
+);
+
+Widget txtRiwayatBtn = Container(
+  child: Text(
+    "Riwayat",
+    style:
+    TextStyle(fontFamily: 'Nunito', fontSize: 20, color: Colors.blueAccent),
+  ),
+);
+
+Widget txtAkunBtn = Container(
+  child: Text(
+    "Akun",
+    style:
+    TextStyle(fontFamily: 'Nunito', fontSize: 20, color: Colors.blueAccent),
+  ),
+);
+
 Widget txtStaff = Container(
   child: Text(
     "Staff",
@@ -35,6 +59,18 @@ Widget txtTanggal = Container(
   ),
 );
 
+Widget txtPoin = Container(
+  child: Text(
+    "0\nPoin",
+    textAlign: TextAlign.center,
+    style: TextStyle(
+      fontFamily: 'Nunito',
+      fontSize: 20,
+      color: Colors.black,
+    ),
+  ),
+);
+
 Widget txtJM = Container(
   child: Text("08.00",
       style:
@@ -44,5 +80,5 @@ Widget txtJM = Container(
 Widget txtJK = Container(
   child: Text("16.00",
       style:
-      TextStyle(fontFamily: 'Nunito', fontSize: 20, color: Colors.black)),
+          TextStyle(fontFamily: 'Nunito', fontSize: 20, color: Colors.black)),
 );

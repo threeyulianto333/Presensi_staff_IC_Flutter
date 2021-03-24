@@ -41,10 +41,10 @@ Widget imgKotakTgl = Container(
   decoration: BoxDecoration(
     color: Colors.white,
     borderRadius: BorderRadius.only(
-        topLeft: Radius.circular(10),
-        topRight: Radius.circular(10),
-        bottomLeft: Radius.circular(10),
-        bottomRight: Radius.circular(10)),
+        topLeft: Radius.circular(15),
+        topRight: Radius.circular(15),
+        bottomLeft: Radius.circular(15),
+        bottomRight: Radius.circular(15)),
     boxShadow: [
       BoxShadow(
         color: Colors.grey.withOpacity(0.2),
@@ -54,4 +54,20 @@ Widget imgKotakTgl = Container(
       ),
     ],
   ),
+);
+
+Widget imgScan = Container(
+  child: SvgPicture.asset("lib/assets/images/login/ico_scan.svg"),
+);
+
+Widget imgScan2 = Container(
+  child: SvgPicture.asset("lib/assets/images/login/btn_presensi.svg"),
+);
+
+Widget imgAkun = Container(
+  child: SvgPicture.asset("lib/assets/images/login/btn_akun.svg"),
+);
+
+Widget imgRiwayat = Container(
+  child: SvgPicture.asset("lib/assets/images/login/btn_riwayat.svg"),
 );

@@ -13,13 +13,7 @@ Widget dashboardPage = Container(
           Container(
               margin: const EdgeInsets.only(top: 50, left: 20), child: txtHi)
         ]),
-        imgDashPng,
-        Stack(children: <Widget>[
-          imgBgBiru,
-          Row(
-            children: [kotakTanggal],
-          )
-        ]),
+        Stack(children: <Widget>[imgDashPng, dashMenu]),
       ],
     ),
   ),
