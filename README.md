@@ -5,7 +5,7 @@ Presensi untuk Staff Indonesia College
 ## update 2903 2021
 
 ### Add
-+ qr camera
++ qr camera [✔]
 
 ## Update 2503 2021
 
