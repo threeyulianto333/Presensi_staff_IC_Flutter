@@ -1,9 +1,8 @@
-import 'package:qr_mobile_vision/qr_camera.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class LoginPage extends StatefulWidget {
-  LoginPage({Key key, this.btnLogin}) : super(key: key);
+class QRPage extends StatefulWidget {
+  QRPage({Key key, this.btnLogin}) : super(key: key);
 
   // This widget is the home page of your application. It is stateful, meaning
   // that it has a State object (defined below) that contains fields that affect
@@ -17,10 +16,10 @@ class LoginPage extends StatefulWidget {
   final ElevatedButton btnLogin;
 
   @override
-  _LoginPage createState() => _LoginPage();
+  _QRPage createState() => _QRPage();
 }
 
-class _LoginPage extends State<LoginPage> {
+class _QRPage extends State<QRPage> {
   int _counter = 0;
 
   void _incrementCounter() {
@@ -37,13 +36,18 @@ class _LoginPage extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Container(
-      constraints: new BoxConstraints.loose(
-        new Size(600, 500),
-      ),
-      child: new QrCamera(qrCodeCallback: (code) {
-        print(code);
-      }),
-    ));
+      body: Container(
+          constraints: new BoxConstraints.loose(
+            new Size(600, 500),
+          ),
+          // child: new QrCamera(
+          //   qrCodeCallback: (code) {
+          //     print(code);
+          //   },
+          // ),
+          child: (Column(
+            children: <Widget>[],
+          ))),
+    );
   }
 }

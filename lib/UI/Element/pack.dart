@@ -79,7 +79,7 @@ Widget rangBtnDash = Container(
     mainAxisAlignment: MainAxisAlignment.center,
     crossAxisAlignment: CrossAxisAlignment.center,
     children: [
-      Container(margin: const EdgeInsets.only(right: 20), child: BtnScan()),
+      Container(margin: const EdgeInsets.only(right: 20), child: BtnScan2()),
       Container(margin: const EdgeInsets.only(right: 20), child: btnRiwayat),
       BtnAkun1()
     ],
