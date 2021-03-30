@@ -2,6 +2,12 @@
 
 Presensi untuk Staff Indonesia College
 
+## Update 3003 2021
+
+### Add
++ Riwayat Page [✔]
++ Snack Bar [✔]
+
 ## update 2903 2021
 
 ### Add
@@ -11,7 +17,7 @@ Presensi untuk Staff Indonesia College
 
 ### Update
 + [UI][Route] Login -> Dashboard  ✔
-+ [UI][ROute] Lupa Pass ✔
++ [UI][Route] Lupa Pass ✔
 
 ## Update 2403 2021
 

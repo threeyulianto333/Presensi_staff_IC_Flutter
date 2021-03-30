@@ -80,7 +80,7 @@ Widget rangBtnDash = Container(
     crossAxisAlignment: CrossAxisAlignment.center,
     children: [
       Container(margin: const EdgeInsets.only(right: 20), child: BtnQr()),
-      Container(margin: const EdgeInsets.only(right: 20), child: btnRiwayat),
+      Container(margin: const EdgeInsets.only(right: 20), child: BtnRiwayat()),
       BtnAkun1()
     ],
   ),
@@ -103,6 +103,31 @@ Widget dashMenu = Padding(
             rangBtnDash,
           ],
         ),
+      ],
+    ),
+  ),
+);
+
+Widget barAtasRiwayat = Container(
+  decoration: BoxDecoration(
+    color: Colors.white,
+    boxShadow: [
+      BoxShadow(
+        color: Colors.grey.withOpacity(0.5),
+        spreadRadius: 5,
+        blurRadius: 7,
+        offset: Offset(0, 1),
+      )
+    ],
+  ),
+  child: Padding(
+    padding: const EdgeInsets.all(10),
+    child: Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: [
+        Container(alignment: Alignment.topLeft, child: BtnPoin()),
+        Container(alignment: Alignment.topRight, child: BtnFilter()),
       ],
     ),
   ),

@@ -8,8 +8,7 @@ Widget imgBgWave1 = Container(
         width: double.infinity,
         child: SvgPicture.asset("lib/assets/images/login/bg_wave1_biru.svg")));
 
-Widget imgIconLogo =
-    Container(child: SvgPicture.asset("lib/assets/images/login/img_logo.svg"));
+Widget imgIconLogo = Container(child: SvgPicture.asset("lib/assets/images/login/img_logo.svg"));
 
 Widget imgBgWave2 = Container(
     child: SizedBox(
@@ -80,4 +79,8 @@ Widget imgRiwayat = Material(
 
 Widget imgLupaPass = Container(
     child:
-    Image(image: AssetImage('lib/assets/images/login/img_lupa_pass.png')));
+        Image(image: AssetImage('lib/assets/images/login/img_lupa_pass.png')));
+
+Widget imgFilter = Container(
+  child: SvgPicture.asset("lib/assets/images/login/ico_filter.svg"),
+);

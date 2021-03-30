@@ -10,8 +10,10 @@ import 'package:presensi_ic_staff/UI/Dashboard/dashboard.dart';
 import 'package:presensi_ic_staff/UI/Element/imgVector.dart';
 import 'package:presensi_ic_staff/UI/Element/pack.dart';
 import 'package:presensi_ic_staff/UI/Element/textView.dart';
+import 'package:presensi_ic_staff/UI/Element/toast.dart';
 import 'package:presensi_ic_staff/UI/Login/login.dart';
 import 'package:barcode_scan/barcode_scan.dart';
+import 'package:presensi_ic_staff/UI/Riwayat/riwayat.dart';
 
 Widget btnLogin = Container(
   child: Container(
@@ -41,22 +43,6 @@ Widget btnScan = Container(
           ],
         ),
         Container(margin: const EdgeInsets.only(top: 10), child: txtPresensiBtn)
-      ],
-    ),
-  ),
-);
-
-Widget btnRiwayat = Container(
-  child: Center(
-    child: Column(
-      children: <Widget>[
-        Stack(
-          children: <Widget>[
-            Positioned.fill(child: imgKotakTgl),
-            Container(margin: const EdgeInsets.all(0), child: imgRiwayat)
-          ],
-        ),
-        Container(margin: const EdgeInsets.only(top: 10), child: txtRiwayatBtn)
       ],
     ),
   ),
@@ -238,5 +224,135 @@ class _BtnQr extends State<BtnQr> {
         ],
       ),
     );
+  }
+}
+
+class BtnRiwayat extends StatefulWidget {
+  @override
+  _BtnRiwayat createState() => _BtnRiwayat();
+}
+
+class _BtnRiwayat extends State<BtnRiwayat> {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Center(
+        child: InkWell(
+          onTap: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => RiwayatPage()));
+          },
+          child: Column(
+            children: <Widget>[
+              Stack(
+                children: <Widget>[
+                  Positioned.fill(child: imgKotakTgl),
+                  Container(margin: const EdgeInsets.all(0), child: imgRiwayat)
+                ],
+              ),
+              Container(
+                  margin: const EdgeInsets.only(top: 10), child: txtRiwayatBtn)
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class BtnPoin extends StatefulWidget {
+  @override
+  _BtnPoin createState() => _BtnPoin();
+}
+
+class _BtnPoin extends State<BtnPoin> {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: ElevatedButton(
+        style: ElevatedButton.styleFrom(
+          primary: Colors.white70, // background
+        ),
+        child: Padding(
+          padding: const EdgeInsets.all(5.0),
+          child: tvPoin,
+        ),
+        onPressed: () {
+          // Toast(isi: 'testing',);
+          // Toast();
+          final snackBar = SnackBar(
+            content: Text('Yay! A SnackBar!'),
+            action: SnackBarAction(
+              label: 'Undo',
+              onPressed: () {
+                // Some code to undo the change.
+              },
+            ),
+          );
+
+          // Find the ScaffoldMessenger in the widget tree
+          // and use it to show a SnackBar.
+          ScaffoldMessenger.of(context).showSnackBar(snackBar);
+        },
+      ),
+    );
+  }
+}
+
+class BtnFilter extends StatefulWidget {
+  @override
+  _BtnFilter createState() => _BtnFilter();
+}
+
+class _BtnFilter extends State<BtnFilter> {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: ElevatedButton(
+        style: ElevatedButton.styleFrom(
+          primary: Colors.white70, // background
+        ),
+        child: Padding(
+          padding: const EdgeInsets.all(5.0),
+          child: Row(
+            children: [
+              Container(margin: const EdgeInsets.only(right: 10),height: 20, width: 20, child: imgFilter),
+              tvFilter,
+            ],
+          ),
+        ),
+        onPressed: () {
+          final snackBar = SnackBar(
+            content: Text('Yay! A SnackBar!'),
+            action: SnackBarAction(
+              label: 'Undo',
+              onPressed: () {
+                // Some code to undo the change.
+              },
+            ),
+          );
+
+          // Find the ScaffoldMessenger in the widget tree
+          // and use it to show a SnackBar.
+          ScaffoldMessenger.of(context).showSnackBar(snackBar);
+        },
+      ),
+    );
+  }
+}
+
+class FabScan extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return FloatingActionButton(
+        elevation: 0.0,
+        child: Padding(
+          padding: const EdgeInsets.all(20.0),
+          child: imgScan,
+        ),
+        backgroundColor: Colors.white,
+        shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.all(Radius.circular(15.0))),
+        onPressed: () {});
   }
 }

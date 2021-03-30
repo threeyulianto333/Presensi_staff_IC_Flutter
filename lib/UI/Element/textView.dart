@@ -90,6 +90,13 @@ Widget tvLupaPassAppBar = Text(
   ),
 );
 
+Widget tvRiwayatAppBar = Text(
+  "Riwayat",
+  style: TextStyle(
+    color: Colors.black,
+  ),
+);
+
 class TvLupaPass extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -111,4 +118,21 @@ Widget txtInsResetPass = Container(
       "Masukkan email, tekan Reset Password, Kemudian ikuti instruksi di Email.",
       style:
           TextStyle(fontFamily: 'Nunito', fontSize: 20, color: Colors.black)),
+);
+
+Widget tvPoin = Container(
+  child: Text("Poin",
+      style:
+          TextStyle(fontFamily: 'Nunito', fontSize: 20, color: Colors.black)),
+);
+
+Widget tvFilter = Container(
+  child: Text("Filter",
+      style:
+          TextStyle(fontFamily: "Nunito", fontSize: 20, color: Colors.black)),
+);
+
+Widget tvTanggal = Text(
+  "26-1-2021",
+  style: TextStyle(fontFamily: "Nunito", fontSize: 30, color: Colors.black),
 );
