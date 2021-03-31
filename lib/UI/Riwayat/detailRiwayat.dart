@@ -81,6 +81,7 @@ class _DetailRiwayatPage extends State<DetailRiwayatPage> {
                               children: [tvPoinDidapat, tvPoinDidapat],
                             ),
                           ),
+                          imgSeparator,
                         ],
                       )),
                 ],

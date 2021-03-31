@@ -6,6 +6,7 @@ Presensi untuk Staff Indonesia College
 
 ### Add
 + Detail Riwayat page
++ codemagic.yaml
 
 ## Update 3003 2021
 
